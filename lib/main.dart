@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
     home: Home(),
   ));
 }
@@ -87,7 +86,6 @@ class _HomeState extends State<Home> {
                       if (value.isEmpty) {
                         return 'Insira seu peso';
                       }
-                      return null;
                     },
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
@@ -102,7 +100,6 @@ class _HomeState extends State<Home> {
                       if (value.isEmpty) {
                         return 'Insira sua altura';
                       }
-                      return null;
                     },
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
